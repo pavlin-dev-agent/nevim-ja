@@ -1,0 +1,16 @@
+services:
+  app:
+    build: .
+    container_name: nevim-ja
+    restart: unless-stopped
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.nevim-ja.rule=Host(`nevim-ja.pavlin.dev`)"
+      - "traefik.http.routers.nevim-ja.entrypoints=web"
+      - "traefik.http.services.nevim-ja.loadbalancer.server.port=3000"
+    networks:
+      - web
+
+networks:
+  web:
+    external: true
