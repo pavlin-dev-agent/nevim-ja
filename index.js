@@ -17,6 +17,7 @@ const server = http.createServer((req, res) => {
     h1 { font-size: 2rem; margin-bottom: 0.5rem; }
     p { color: #888; }
     code { background: #1a1a1a; padding: 0.2em 0.5em; border-radius: 4px; font-size: 0.9em; }
+    .red-circle { width: 100px; height: 100px; background: #e53e3e; border-radius: 50%; margin: 1.5rem auto 0; }
   </style>
 </head>
 <body>
@@ -24,6 +25,7 @@ const server = http.createServer((req, res) => {
     <h1>nevim-ja</h1>
     <p>Running on <code>nevim-ja.pavlin.dev</code></p>
     <p style="margin-top: 1rem; color: #666;">Edit this project and push to deploy.</p>
+    <div class="red-circle"></div>
   </div>
 </body>
 </html>`);
