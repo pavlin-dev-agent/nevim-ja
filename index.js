@@ -19,6 +19,7 @@ const server = http.createServer((req, res) => {
     code { background: #1a1a1a; padding: 0.2em 0.5em; border-radius: 4px; font-size: 0.9em; }
     .red-circle { width: 100px; height: 100px; background: #e53e3e; border-radius: 50%; margin: 1.5rem auto 0; }
     .blue-circle { width: 100px; height: 100px; background: #3b82f6; border-radius: 50%; margin: 1rem auto 0; }
+    .pink-circle { width: 100px; height: 100px; background: #ec4899; border-radius: 50%; margin: 1rem auto 0; }
   </style>
 </head>
 <body>
@@ -28,6 +29,7 @@ const server = http.createServer((req, res) => {
     <p style="margin-top: 1rem; color: #666;">Edit this project and push to deploy.</p>
     <div class="red-circle"></div>
     <div class="blue-circle"></div>
+    <div class="pink-circle"></div>
   </div>
 </body>
 </html>`);
